@@ -101,7 +101,7 @@ const BookFiltersPanel = ({ onFilterChange, initialFilters }: BookFiltersProps) 
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">All Departments</SelectItem>
+                <SelectItem value="all">All Departments</SelectItem>
                 {departments.map((dept) => (
                   <SelectItem key={dept} value={dept}>{dept}</SelectItem>
                 ))}
@@ -121,7 +121,7 @@ const BookFiltersPanel = ({ onFilterChange, initialFilters }: BookFiltersProps) 
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                <SelectItem value="">Any Condition</SelectItem>
+                <SelectItem value="any">Any Condition</SelectItem>
                 {bookConditions.map((condition) => (
                   <SelectItem key={condition} value={condition}>{condition}</SelectItem>
                 ))}
