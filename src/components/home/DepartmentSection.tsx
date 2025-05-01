@@ -4,7 +4,7 @@ import { departments } from "@/services/mockData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { 
-  BookOpen, Computer, Flask, Pi, 
+  BookOpen, Computer, Beaker, Pi, 
   Microscope, LineChart, Brain, BookMarked,
   Clock, Atom, DollarSign
 } from "lucide-react";
@@ -14,7 +14,7 @@ const departmentIcons: Record<string, React.ReactNode> = {
   "Computer Science": <Computer className="h-6 w-6" />,
   "Mathematics": <Pi className="h-6 w-6" />,
   "Biology": <Microscope className="h-6 w-6" />,
-  "Chemistry": <Flask className="h-6 w-6" />,
+  "Chemistry": <Beaker className="h-6 w-6" />,
   "Engineering": <Atom className="h-6 w-6" />,
   "Business": <DollarSign className="h-6 w-6" />,
   "Psychology": <Brain className="h-6 w-6" />,
