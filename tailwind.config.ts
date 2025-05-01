@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,28 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom university book platform colors
+				univblue: {
+					DEFAULT: '#1a365d',
+					light: '#2a4a7c',
+					dark: '#0f2942',
+				},
+				univgold: {
+					DEFAULT: '#f0c75e',
+					light: '#f5d78a',
+					dark: '#e5b73e',
+				},
+				univteal: {
+					DEFAULT: '#2c7a7b',
+					light: '#3b9798',
+					dark: '#1d5c5d',
+				},
+				univred: {
+					DEFAULT: '#9b2c2c',
+					light: '#b73c3c',
+					dark: '#7e1e1e',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +106,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'slide-in': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'slide-in': 'slide-in 0.6s ease-out'
+			},
+			fontFamily: {
+				'serif': ['Merriweather', 'Georgia', 'serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
 			}
 		}
 	},
